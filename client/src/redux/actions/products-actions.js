@@ -114,7 +114,7 @@ export const updateproduct =(name,brand,model,sellingPrice,buyingPrice,quantityB
    
      
             
-  //dispatch({type:UPDATE_PRODUCT_SUCCESS,payload:data});
+  dispatch({type:UPDATE_PRODUCT_SUCCESS,payload:data});
        } catch (error) {
       const message=  error.response&& error.response.data.message
           ? error.response.data.message
