@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
 import { useDispatch,useSelector } from 'react-redux'
-
+import { baseUrlFrontend } from '../../frontend-url';
 import { createproduct} from '../../redux/actions/products-actions'
 
 import { Link } from 'react-router-dom'
@@ -98,7 +98,7 @@ const dispatch= useDispatch();
     useEffect(() => {
       if (addProduct.success===true) {
        
-     window.location.href="http://localhost:3000/home/products" 
+     window.location.href=`${baseUrlFrontend}/home/products` 
      
         }
     }, [addProduct.success])
