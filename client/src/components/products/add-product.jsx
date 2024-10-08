@@ -98,7 +98,7 @@ const dispatch= useDispatch();
     useEffect(() => {
       if (addProduct.success===true) {
        
-     window.location.href=`${baseUrlFrontend}/home/products` 
+     window.location.href=`http://147.79.101.199:3000/home/products`
      
         }
     }, [addProduct.success])
