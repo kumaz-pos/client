@@ -16,7 +16,7 @@ console.log(id);
   const navigate= useNavigate();
   const products= useSelector((state)=>state.getProducts);
   const product= useSelector((state)=>state.getProduct);
-  let updateProduct=useSelector((state)=>state.updateProduct);
+  let editProduct=useSelector((state)=>state.updateProduct);
   console.log(product);
   let {loading,success,data,error}=products
   console.log(data);
@@ -104,12 +104,12 @@ imagesUrl.length&& console.log(imagesUrl)
 }, [getproducts,getproduct,images,imagesUrl])
 
       useEffect(() => {
-      if (updateProduct.success===true) {
+      if (editProduct.success===true) {
        
      window.location.href="http://147.79.101.199:3000/home/products" 
      
         }
-    }, [updateProduct.success])
+    }, [editProduct.success])
     
   return (
     
