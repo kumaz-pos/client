@@ -17,7 +17,7 @@ console.log(id);
   const products= useSelector((state)=>state.getProducts);
   const product= useSelector((state)=>state.getProduct);
   let editProduct=useSelector((state)=>state.updateProduct);
-  console.log(product);
+  console.log(editProduct);
   let {loading,success,data,error}=products
   console.log(data);
   let info=loading ? "loading" : error ? "error": data.filter((item)=>item._id===id);
